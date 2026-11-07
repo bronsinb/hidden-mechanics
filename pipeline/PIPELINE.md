@@ -10,11 +10,11 @@ Home of everything: GitHub repo **bronsinb/hidden-mechanics** (public). Attach i
 - `pipeline/episodes/NN_slug/` script.json, scenes.py, meta.json
 - `videos/` finished upload-size MP4s (YouTube Studio pulls the file from here)
 - `branding/` logo, banner, watermark
-A mirror of `videos/` lives on Bronsin's Mac in `~/Movies/Hidden Mechanics/videos/` (nice to have, not required).
-Uploading needs Bronsin's Mac to be on, because it happens in his Chrome (Claude in Chrome extension, profile signed into the channel).
+Uploading is done by GitHub Actions (`.github/workflows/publish.yml` -> `pipeline/publish.py`) with the official YouTube Data API. It needs no Mac and no browser. Secrets YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN are set in the repo (Bronsin set them; never ask for or print them).
+Bronsin's Chrome (Claude in Chrome, signed into the channel) is only a **fallback** uploader and for channel-page edits.
 
-## 0. Preflight (stop early, and say why)
-- Chrome reachable? `list_connected_browsers` must return a browser (retry a few times over ~2 minutes). If not: **notify** (see 7) "Chrome on your Mac isn't reachable (Mac asleep/off, Chrome closed, or the Claude extension disconnected), so today's short wasn't made" and stop. Check this before spending time on rendering.
+## 0. Preflight
+- Nothing to check up front: the whole run happens in the cloud. (Chrome is only needed if the API upload fails, see 6.)
 
 ## 1. Set up the cloud workspace
 - `add_repo` bronsinb/hidden-mechanics (push), then `git clone --depth 1 https://github.com/bronsinb/hidden-mechanics /home/claude/hidden-mechanics`.
@@ -47,41 +47,38 @@ Uploading needs Bronsin's Mac to be on, because it happens in his Chrome (Claude
 - `python3 -m hm.studio video EP` -> `EP/final.mp4` (~35 s) and `EP/upload.mp4` (same video under 10 MB, which is the Chrome file-attach limit; upload this one). Pull 4 frames from the MP4 with ffmpeg and look once. Check loudness (`volumedetect` max around -1 to -2 dB).
 - Name: `hidden_mechanics_NN_slug.mp4`.
 
-## 6. Save and upload
-- Copy `EP/upload.mp4` to `/home/claude/hidden-mechanics/videos/hidden_mechanics_NN_slug.mp4`. Commit the video, the episode folder (script.json, scenes.py, meta.json; generated files are gitignored) and any engine changes, then `git push origin main`. Note the commit SHA (`git rev-parse HEAD`).
-- Optional mirror: if the Mac is reachable (`get_device_info`), also `device_commit_files` the MP4 to `~/Movies/Hidden Mechanics/videos/`.
-- Upload in **Chrome** (Claude in Chrome tools): new tab -> `https://studio.youtube.com/channel/UCqTSZ70ZSh30bof-sx5kROQ/videos/upload?d=ud`. Wait for the upload dialog, then run this in the page with `javascript_tool` (it pulls the video from GitHub and hands it to YouTube's file picker; the Chrome extension's own file attach does not accept files Claude made):
-  ```js
-  const url = 'https://raw.githubusercontent.com/bronsinb/hidden-mechanics/<SHA>/videos/hidden_mechanics_NN_slug.mp4';
-  const blob = await (await fetch(url)).blob();
-  const input = document.querySelector('ytcp-uploads-dialog input[type=file], input[type=file]');
-  const dt = new DataTransfer(); dt.items.add(new File([blob], 'hidden_mechanics_NN_slug.mp4', {type: 'video/mp4'}));
-  input.files = dt.files; input.dispatchEvent(new Event('change', {bubbles: true}));
-  blob.size
-  ```
-  Use the commit SHA in the URL (a branch name can serve a cached old file). If Studio shows "Oops, something went wrong", reload the page once and retry.
-- Details (title and description boxes are contenteditable divs, so `form_input` refuses them; set them in-page):
-  ```js
-  const boxes = [...document.querySelectorAll('ytcp-uploads-dialog #textbox')];   // [title, description]
-  const setText = (el, txt) => { el.focus(); document.execCommand('selectAll'); document.execCommand('insertText', false, txt); el.dispatchEvent(new Event('input', {bubbles: true})); el.blur(); };
-  setText(boxes[0], TITLE); setText(boxes[1], DESCRIPTION);
-  document.querySelector('tp-yt-paper-radio-button[name="VIDEO_MADE_FOR_KIDS_NOT_MFK"]').click();
-  document.querySelector('ytcp-uploads-dialog #toggle-button').click();            // "Show more"
-  // after ~1 s:
-  const tags = document.querySelector('ytcp-uploads-dialog #tags-container input');
-  tags.focus(); document.execCommand('insertText', false, TAGS.join(',') + ','); tags.blur();
-  document.querySelector('tp-yt-paper-radio-button[name="VIDEO_HAS_ALTERED_CONTENT_NO"]').click();  // animated explainer, nothing realistic
-  for (let i = 0; i < 3; i++) { document.querySelector('ytcp-uploads-dialog #next-button').click(); await new Promise(r => setTimeout(r, 1500)); }
-  ```
-  Title from meta.json ends with `#shorts` and stays under 100 characters.
-- Visibility step: confirm the dialog shows "Checks complete. No issues found." If checks report a copyright or policy issue: do not publish, notify Bronsin.
-- **Schedule** it for 10:00 AM America/Los_Angeles on the first day that has no episode yet: the day after the latest `publish_at` in episodes.json, but never earlier than the next 10:00 AM from now. (This keeps a one-day buffer, so one missed run doesn't leave a gap.)
-  - Click the Schedule section's "Click to expand" button (`find` it). The date defaults to tomorrow; change it with the date dropdown if needed.
-  - Time: the input showing e.g. "12:00 AM" -> focus, select, `execCommand('insertText', false, '10:00 AM')`, dispatch input + change.
-  - Time zone: click the time zone dropdown and choose the "Los Angeles" entry (GMT-08:00 in winter, GMT-07:00 in summer). Zoom on the Schedule box to confirm date, "10:00 AM" and Los Angeles before clicking **Schedule**.
-- The confirmation dialog says "Video scheduled ... set to public on <date> at 10:00 AM" and shows the link (`https://youtube.com/shorts/<id>`). Close the tab.
+## 6. Save and publish (cloud, via GitHub Actions)
+- Copy `EP/upload.mp4` to `/home/claude/hidden-mechanics/videos/hidden_mechanics_NN_slug.mp4`.
+- Pick the publish time: 10:00 AM America/Los_Angeles on the first day that has no episode yet = the day after the latest `publish_at` in episodes.json, never earlier than the next 10:00 AM from now. Write it as RFC3339 with the right offset (`-08:00` in winter, `-07:00` in summer), e.g. `2026-11-08T10:00:00-08:00`. This keeps a one-day buffer, so one missed run doesn't leave a gap.
+- Append the episode to `pipeline/episodes.json` with `"status": "ready"`:
+  `{n, slug, title, topic, category, date, video: "videos/hidden_mechanics_NN_slug.mp4", publish_at, sources, status: "ready"}`
+- Commit the video, the episode folder (script.json, scenes.py, meta.json; generated files are gitignored), episodes.json and any engine changes in **one** commit, then `git push origin main`. The push of episodes.json starts the "Publish to YouTube" workflow, which uploads every `ready` entry with title/description/tags from meta.json, category Science & Technology, not made for kids, no synthetic media, scheduled with `publishAt`, and then commits the YouTube id/link back into episodes.json (`status: scheduled`).
+- Watch it: `gh api "repos/bronsinb/hidden-mechanics/actions/runs?per_page=3"` -> take the newest run, wait with an until-loop on `.status == "completed"` (`gh api repos/bronsinb/hidden-mechanics/actions/runs/<id> --jq .status`), then check `.conclusion` and the steps (`.../runs/<id>/jobs`). Then `git pull` and read the episode's `video_url` from episodes.json.
+- To re-run after a fix: `gh api -X POST repos/bronsinb/hidden-mechanics/actions/workflows/publish.yml/dispatches -f ref=main -f 'inputs[mode]=upload'` (`mode=check` only tests the login).
+- If the workflow fails: a login error ("refresh token may be expired or revoked") means Bronsin must redo the OAuth Playground step and update YT_REFRESH_TOKEN -> notify him. Any other failure: try the **Chrome fallback** if `list_connected_browsers` shows a browser:
+  - New tab -> `https://studio.youtube.com/channel/UCqTSZ70ZSh30bof-sx5kROQ/videos/upload?d=ud`. Hand the file to the dialog in-page (the extension's own file attach refuses generated files):
+    ```js
+    const url = 'https://raw.githubusercontent.com/bronsinb/hidden-mechanics/<SHA>/videos/hidden_mechanics_NN_slug.mp4';
+    const blob = await (await fetch(url, {cache: 'no-store'})).blob();   // retry for ~1 min if 404 right after a push
+    const input = document.querySelector('ytcp-uploads-dialog input[type=file], input[type=file]');
+    const dt = new DataTransfer(); dt.items.add(new File([blob], 'hidden_mechanics_NN_slug.mp4', {type: 'video/mp4'}));
+    input.files = dt.files; input.dispatchEvent(new Event('change', {bubbles: true}));
+    ```
+  - Fill the form in-page (title/description are contenteditable divs, `form_input` refuses them):
+    ```js
+    const boxes = [...document.querySelectorAll('ytcp-uploads-dialog #textbox')];   // [title, description]
+    const setText = (el, txt) => { el.focus(); document.execCommand('selectAll'); document.execCommand('insertText', false, txt); el.dispatchEvent(new Event('input', {bubbles: true})); el.blur(); };
+    setText(boxes[0], TITLE); setText(boxes[1], DESCRIPTION);
+    document.querySelector('tp-yt-paper-radio-button[name="VIDEO_MADE_FOR_KIDS_NOT_MFK"]').click();
+    document.querySelector('ytcp-uploads-dialog #toggle-button').click();            // "Show more", then after ~1 s:
+    const tags = document.querySelector('ytcp-uploads-dialog #tags-container input');
+    tags.focus(); document.execCommand('insertText', false, TAGS.join(',') + ','); tags.blur();
+    document.querySelector('tp-yt-paper-radio-button[name="VIDEO_HAS_ALTERED_CONTENT_NO"]').click();
+    for (let i = 0; i < 3; i++) { document.querySelector('ytcp-uploads-dialog #next-button').click(); await new Promise(r => setTimeout(r, 1500)); }
+    ```
+  - On Visibility, confirm "Checks complete. No issues found." Expand Schedule ("Click to expand"), set the date, set time "10:00 AM" (focus the time input, select, `execCommand('insertText', false, '10:00 AM')`), pick the "Los Angeles" time zone from its dropdown, zoom to confirm, click **Schedule**. The confirmation dialog shows the `youtube.com/shorts/<id>` link. Close the tab.
 
 ## 7. Log and notify
-- Append to `episodes.json`: `{n, slug, title, topic, category, date, video_url, publish_at, sources}`, commit and push.
+- episodes.json is updated by the workflow (or, after a Chrome fallback upload, set `status: scheduled`, `youtube_id`, `video_url` yourself and push).
 - Notify Bronsin with a push notification (PushNotification tool): "Short #N scheduled: <title> - goes live <time>. <link>". If a step failed, say which step and what's needed.
 - If push isn't available, or the failure means the short can't go out today, also email benyaminbronsin@gmail.com from the connected Gmail with the same message (subject starts with "Hidden Mechanics:").
