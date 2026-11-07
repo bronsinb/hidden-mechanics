@@ -7,7 +7,10 @@
   "category": "cars",
   "date": "2026-11-06",
   "video_url": "https://youtube.com/shorts/QyrfePYXnV4",
-  "publish_at": "2026-11-06 15:39 America/Los_Angeles"
+  "publish_at": "2026-11-06T15:39:00-08:00",
+  "status": "published",
+  "youtube_id": "QyrfePYXnV4",
+  "video": "videos/hidden_mechanics_01_keyless_entry.mp4"
  },
  {
   "n": 2,
@@ -17,10 +20,13 @@
   "category": "planes",
   "date": "2026-11-06",
   "video_url": "https://youtube.com/shorts/Bq2Uje3z8vA",
-  "publish_at": "2026-11-07 10:00 America/Los_Angeles",
+  "publish_at": "2026-11-07T10:00:00-08:00",
   "sources": [
    "https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/",
    "https://migflug.com/afterburner/why-aircraft-windows-have-a-tiny-bleed-hole/"
-  ]
+  ],
+  "status": "scheduled",
+  "youtube_id": "Bq2Uje3z8vA",
+  "video": "videos/hidden_mechanics_02_round_plane_windows.mp4"
  }
 ]
