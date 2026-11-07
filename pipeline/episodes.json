@@ -1,5 +1,26 @@
 [
-  {"n": 1, "slug": "keyless_entry", "title": "How Your Car Knows Exactly Where Your Key Is 🔑 #shorts", "topic": "Passive keyless entry: LF antennas, signal strength location, relay attacks, UWB time-of-flight", "category": "cars", "date": "2026-11-06", "video_url": "https://youtube.com/shorts/QyrfePYXnV4", "publish_at": "2026-11-06 (public on upload)"},
-  {"n": 2, "slug": "round_plane_windows", "title": "Why Are Airplane Windows Round? ✈️ #shorts", "topic": "Stress concentration at sharp corners, de Havilland Comet 1954 fatigue failures, three-pane windows and the breather hole", "category": "planes", "date": "2026-11-06", "video_url": null, "publish_at": null,
-   "sources": ["https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/", "https://migflug.com/afterburner/why-aircraft-windows-have-a-tiny-bleed-hole/"]}
+ {
+  "n": 1,
+  "slug": "keyless_entry",
+  "title": "How Your Car Knows Exactly Where Your Key Is 🔑 #shorts",
+  "topic": "Passive keyless entry: LF antennas, signal strength location, relay attacks, UWB time-of-flight",
+  "category": "cars",
+  "date": "2026-11-06",
+  "video_url": "https://youtube.com/shorts/QyrfePYXnV4",
+  "publish_at": "2026-11-06 15:39 America/Los_Angeles"
+ },
+ {
+  "n": 2,
+  "slug": "round_plane_windows",
+  "title": "Why Are Airplane Windows Round? ✈️ #shorts",
+  "topic": "Stress concentration at sharp corners, de Havilland Comet 1954 fatigue failures, three-pane windows and the breather hole",
+  "category": "planes",
+  "date": "2026-11-06",
+  "video_url": "https://youtube.com/shorts/Bq2Uje3z8vA",
+  "publish_at": "2026-11-07 10:00 America/Los_Angeles",
+  "sources": [
+   "https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/",
+   "https://migflug.com/afterburner/why-aircraft-windows-have-a-tiny-bleed-hole/"
+  ]
+ }
 ]

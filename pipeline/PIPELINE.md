@@ -60,9 +60,26 @@ Uploading needs Bronsin's Mac to be on, because it happens in his Chrome (Claude
   blob.size
   ```
   Use the commit SHA in the URL (a branch name can serve a cached old file). If Studio shows "Oops, something went wrong", reload the page once and retry.
-- Details: title from meta.json (ends with `#shorts`, under 100 chars), description from meta.json, "No, it's not made for kids" (`tp-yt-paper-radio-button[name="VIDEO_MADE_FOR_KIDS_NOT_MFK"]`). Under "Show more", add the tags. Altered/synthetic content: "No" (animated explainer, no realistic people or events).
-- Next x3 to Visibility. **Schedule** the publish for 10:00 AM America/Los_Angeles on the first day that has no episode yet: the day after the latest `publish_at` in episodes.json, but never earlier than the next 10:00 AM from now. (This keeps a one-day buffer, so one missed run doesn't leave a gap.) Confirm "Checks complete. No issues found." before scheduling. If checks report a copyright or policy issue: do not publish, notify Bronsin.
-- Read back the video link from the confirmation dialog. Close the tab.
+- Details (title and description boxes are contenteditable divs, so `form_input` refuses them; set them in-page):
+  ```js
+  const boxes = [...document.querySelectorAll('ytcp-uploads-dialog #textbox')];   // [title, description]
+  const setText = (el, txt) => { el.focus(); document.execCommand('selectAll'); document.execCommand('insertText', false, txt); el.dispatchEvent(new Event('input', {bubbles: true})); el.blur(); };
+  setText(boxes[0], TITLE); setText(boxes[1], DESCRIPTION);
+  document.querySelector('tp-yt-paper-radio-button[name="VIDEO_MADE_FOR_KIDS_NOT_MFK"]').click();
+  document.querySelector('ytcp-uploads-dialog #toggle-button').click();            // "Show more"
+  // after ~1 s:
+  const tags = document.querySelector('ytcp-uploads-dialog #tags-container input');
+  tags.focus(); document.execCommand('insertText', false, TAGS.join(',') + ','); tags.blur();
+  document.querySelector('tp-yt-paper-radio-button[name="VIDEO_HAS_ALTERED_CONTENT_NO"]').click();  // animated explainer, nothing realistic
+  for (let i = 0; i < 3; i++) { document.querySelector('ytcp-uploads-dialog #next-button').click(); await new Promise(r => setTimeout(r, 1500)); }
+  ```
+  Title from meta.json ends with `#shorts` and stays under 100 characters.
+- Visibility step: confirm the dialog shows "Checks complete. No issues found." If checks report a copyright or policy issue: do not publish, notify Bronsin.
+- **Schedule** it for 10:00 AM America/Los_Angeles on the first day that has no episode yet: the day after the latest `publish_at` in episodes.json, but never earlier than the next 10:00 AM from now. (This keeps a one-day buffer, so one missed run doesn't leave a gap.)
+  - Click the Schedule section's "Click to expand" button (`find` it). The date defaults to tomorrow; change it with the date dropdown if needed.
+  - Time: the input showing e.g. "12:00 AM" -> focus, select, `execCommand('insertText', false, '10:00 AM')`, dispatch input + change.
+  - Time zone: click the time zone dropdown and choose the "Los Angeles" entry (GMT-08:00 in winter, GMT-07:00 in summer). Zoom on the Schedule box to confirm date, "10:00 AM" and Los Angeles before clicking **Schedule**.
+- The confirmation dialog says "Video scheduled ... set to public on <date> at 10:00 AM" and shows the link (`https://youtube.com/shorts/<id>`). Close the tab.
 
 ## 7. Log and notify
 - Append to `episodes.json`: `{n, slug, title, topic, category, date, video_url, publish_at, sources}`, commit and push.
