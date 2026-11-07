@@ -28,5 +28,21 @@
   "status": "scheduled",
   "youtube_id": "Bq2Uje3z8vA",
   "video": "videos/hidden_mechanics_02_round_plane_windows.mp4"
+ },
+ {
+  "n": 3,
+  "slug": "phone_knows_up",
+  "title": "How Your Phone Knows Which Way Is Up 📱 #shorts",
+  "topic": "Smartphone MEMS accelerometer: proof mass on springs, capacitive plates, 3 axes, screen rotation, free fall reads 0 g, Apple Sudden Motion Sensor",
+  "category": "phones",
+  "date": "2026-11-06",
+  "video": "videos/hidden_mechanics_03_phone_knows_up.mp4",
+  "publish_at": "2026-11-08T10:00:00-08:00",
+  "sources": [
+   "https://arxiv.org/abs/1507.02224",
+   "https://en.wikipedia.org/wiki/Sudden_Motion_Sensor",
+   "https://maketecheasier.com/how-phone-accelerometers-detect-orientation/"
+  ],
+  "status": "ready"
  }
 ]

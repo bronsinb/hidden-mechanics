@@ -1,0 +1,15 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "Turn your phone sideways and the screen follows. How does it know which way is up? There's a tiny weight inside."},
+    {"id": "mass",    "text": "In a chip called an accelerometer, a speck of silicon hangs on microscopic springs."},
+    {"id": "gravity", "text": "Gravity pulls on that weight, so it shifts slightly toward the ground."},
+    {"id": "plates",  "text": "Fixed plates sit on both sides. As the weight moves, one gap shrinks and the other grows, and the chip measures that difference."},
+    {"id": "axes",    "text": "Three of these sensors, one for each direction, tell the phone exactly where down is."},
+    {"id": "rotate",  "text": "Tilt the phone, and gravity pulls along a new direction. The screen turns to match."},
+    {"id": "fall",    "text": "But drop your phone, and the weight floats. In free fall, the sensor reads zero."},
+    {"id": "laptop",  "text": "Apple laptops used that trick to pull their hard drive heads away before hitting the floor."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}

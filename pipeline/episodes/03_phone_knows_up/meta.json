@@ -1,0 +1,6 @@
+{
+  "title": "How Your Phone Knows Which Way Is Up 📱 #shorts",
+  "description": "Turn your phone sideways and the screen follows. Inside is an accelerometer: a tiny silicon weight on springs that gravity tugs toward the ground. Here's how it turns that tiny shift into 'down', why it reads zero when your phone is falling, and how laptops used that to save their hard drives.\n\nFollow Hidden Mechanics for more everyday engineering, explained in under a minute.\n\n#smartphone #accelerometer #howitworks #engineering #shorts",
+  "tags": ["how does my phone know which way is up", "accelerometer", "screen rotation", "MEMS", "free fall", "sudden motion sensor", "how it works", "engineering"],
+  "sources": ["https://arxiv.org/abs/1507.02224", "https://en.wikipedia.org/wiki/Sudden_Motion_Sensor", "https://maketecheasier.com/how-phone-accelerometers-detect-orientation/"]
+}
