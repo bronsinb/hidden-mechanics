@@ -91,15 +91,15 @@ def upload(tok, ep):
 
 
 def main():
-    tok = token()
     if len(sys.argv) > 1 and sys.argv[1] == "check":
-        check(tok)
+        check(token())
         return
     log = json.load(open(LOG))
     ready = [e for e in log if e.get("status") == "ready"]
     if not ready:
         print("Nothing to upload.")
         return
+    tok = token()
     for ep in ready:
         upload(tok, ep)
         json.dump(log, open(LOG, "w"), indent=1, ensure_ascii=False)
