@@ -1,0 +1,15 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",     "text": "Airplane windows are always round. Not for looks. Square ones once tore jets apart."},
+    {"id": "pressure", "text": "At cruising altitude, the cabin is pumped full of air, so the body of the plane swells like a balloon on every flight."},
+    {"id": "flow",     "text": "That stress flows through the metal skin, and around every hole, like water around a rock."},
+    {"id": "corners",  "text": "But a sharp corner squeezes the stress into one tiny point, several times higher than anywhere else."},
+    {"id": "comet",    "text": "In 1954, two de Havilland Comets, the world's first jet airliners, broke apart in mid air."},
+    {"id": "cause",    "text": "Investigators found fatigue cracks that grew, flight after flight, from the corner of a square cutout."},
+    {"id": "round",    "text": "A rounded window lets the stress flow smoothly around it. No corner, no weak point."},
+    {"id": "hole",     "text": "And that tiny hole in your window? It makes the outer pane carry the pressure, and stops the glass from fogging up."},
+    {"id": "cta",      "text": "Follow Hidden Mechanics for more."}
+  ]
+}

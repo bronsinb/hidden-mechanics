@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+frames/
+parts/
+*.wav
+timeline.json
+final.mp4
+upload.mp4
+thumbnail.*

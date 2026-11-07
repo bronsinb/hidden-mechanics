@@ -1,0 +1,15 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",     "text": "Your car knows if your key is in your pocket, or sitting on the back seat. But how?"},
+    {"id": "antennas", "text": "Hidden in the door handles, the cabin, and the trunk are tiny antennas."},
+    {"id": "bubbles",  "text": "Each one sends out a weak radio bubble that only reaches a meter or two."},
+    {"id": "wake",     "text": "When your key enters a bubble, it wakes up, measures how strong each signal is, and answers with a secret code."},
+    {"id": "locate",   "text": "The car checks the code, then compares those signal strengths to work out exactly where the key is."},
+    {"id": "result",   "text": "At the driver's door? It unlocks. Inside the cabin? Now the engine can start."},
+    {"id": "relay",    "text": "But thieves found a trick. Two cheap devices can relay that bubble from your driveway to the key inside your house."},
+    {"id": "uwb",      "text": "That's why newer keys use ultra wideband. They time how long the signal takes to travel, and you can't fake the speed of light."},
+    {"id": "cta",      "text": "Follow Hidden Mechanics for more."}
+  ]
+}
