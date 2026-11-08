@@ -47,5 +47,20 @@
   "youtube_id": "4v30kml35UE",
   "video_url": "https://youtube.com/shorts/4v30kml35UE",
   "uploaded_at": "2026-11-07T04:24:03Z"
+ },
+ {
+  "n": 4,
+  "slug": "microwave_heats",
+  "title": "How Does a Microwave Actually Heat Food? 🔥 #shorts",
+  "topic": "Microwave oven: magnetron, 2.45 GHz / 12 cm waves, polar water molecules twisting (dielectric heating), ~1 cm penetration (not inside-out), hot spots and the turntable, door mesh",
+  "category": "home appliances",
+  "date": "2026-11-07",
+  "video": "videos/hidden_mechanics_04_microwave_heats.mp4",
+  "publish_at": "2026-11-09T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Microwave_oven",
+   "https://www.scienceabc.com/innovation/how-does-a-microwave-oven-work.html"
+  ],
+  "status": "ready"
  }
 ]

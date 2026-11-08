@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",      "text": "Your microwave heats food with no flame and no hot coil. Instead, it shakes the water inside your food."},
+    {"id": "magnetron", "text": "A part called a magnetron turns electricity into microwaves, radio waves about twelve centimeters long."},
+    {"id": "dipole",    "text": "Water molecules are slightly positive at one end and negative at the other."},
+    {"id": "flip",      "text": "The microwave's electric field swings back and forth two point four five billion times a second, and the molecules twist to follow it."},
+    {"id": "heat",      "text": "All that jostling turns into heat. But the waves only reach about a centimeter in. The middle warms up from the outside."},
+    {"id": "spots",     "text": "The waves also pile up into hot and cold spots. That's why your plate spins."},
+    {"id": "door",      "text": "And the door? Its metal mesh has holes far smaller than the waves, so they bounce back, but light slips through."},
+    {"id": "cta",       "text": "Follow Hidden Mechanics for more."}
+  ]
+}
