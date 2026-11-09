@@ -1,0 +1,23 @@
+{
+  "_about": "Planned topics for specific publish dates (America/Los_Angeles). The daily run checks this before picking a topic: if the publish date it is making a short for has an entry, make that topic. Dates without an entry use the normal topic choice.",
+  "series": {
+    "gta6_week": {
+      "why": "GTA 6 launches Nov 19, 2026 (PS5 / Xbox Series X|S). Search interest peaks around launch, so a 5-part mini-series of real engineering explainers with a genuine GTA 6 connection runs Nov 16-20, then the channel returns to everyday topics.",
+      "rules": [
+        "The video must genuinely be about the topic linked to GTA 6; the game is the hook, the content is real engineering.",
+        "Never claim how GTA 6 works internally unless Rockstar has confirmed it publicly (find and cite the source). Explain how open-world games generally do it, or the real-world equivalent.",
+        "No Rockstar footage, logos, characters, key art or in-game screenshots. Our own drawings only (generic cars, generic Florida-style city, diagrams).",
+        "Mentioning GTA 6 by name in the title, description and tags is fine for these episodes only. Never add GTA tags to other episodes.",
+        "Title format: '<hook question> 🎮 #GTA6 #shorts' (under 100 characters). Description ends with: 'Hidden Mechanics is not affiliated with Rockstar Games or Take-Two Interactive.'",
+        "Categories in episodes.json: 'gaming x engineering'."
+      ]
+    }
+  },
+  "slots": {
+    "2026-11-16": {"series": "gta6_week", "topic": "The real Vice City: how Miami's drawbridges (bascule bridges) open", "angle": "GTA 6 is set in a fictional Florida; Miami's river is lined with drawbridges. Counterweights, trunnions, how a huge leaf lifts with modest motors, why boats get priority. Real Miami/Florida facts only."},
+    "2026-11-17": {"series": "gta6_week", "topic": "Car crashes in games vs. real life: why real cars crumple on purpose", "angle": "Games make crashes look spectacular; real cars use crumple zones and a rigid safety cell to slow the stop and protect people. Energy, time to stop, airbags."},
+    "2026-11-18": {"series": "gta6_week", "topic": "Real speed cameras vs. GTA's wanted system: how radar and lidar catch speeders", "angle": "Doppler radar vs. lidar laser timing, how the camera matches plate to speed. Contrast with a game's wanted stars only in general terms."},
+    "2026-11-19": {"series": "gta6_week", "topic": "How open-world games load a whole city with no loading screens (GTA 6 launch day)", "angle": "Streaming the world in chunks around the player, levels of detail (simpler models far away), predicting where you're heading, why driving fast is hard for the game. General open-world technique; GTA 6 specifics only if officially confirmed."},
+    "2026-11-20": {"series": "gta6_week", "topic": "How game traffic and pedestrians decide where to go", "angle": "Navigation meshes / road graphs, pathfinding (A* style), simple rules that make crowds look alive. General game AI; tie to open-world games like GTA."}
+  }
+}

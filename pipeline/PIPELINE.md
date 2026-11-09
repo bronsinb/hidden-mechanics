@@ -22,6 +22,7 @@ Bronsin's Chrome (Claude in Chrome, signed into the channel) is only a **fallbac
 - Work from `/home/claude/hidden-mechanics/pipeline` (commands are `python3 -m hm.studio ...`). Look at the two most recent `episodes/*/scenes.py` as style references.
 
 ## 2. Pick today's topic
+- **First check `pipeline/calendar.json`.** Work out the publish date for this run (see step 6). If `slots` has an entry for that date, make that topic with its angle, and follow the rules of its series (e.g. `gta6_week`: no Rockstar assets, no unconfirmed claims about the game, GTA 6 in title/tags only for these episodes, not-affiliated line in the description). Otherwise pick a topic as below.
 - Read `episodes.json`; never repeat a topic or a close variant. Rotate categories (don't do cars twice in a row).
 - A good topic is a "wait, how does that work?" question about something people touch every day, with a satisfying mechanism and ideally a twist or surprising fact at the end. Examples of the bar: keyless entry + relay attacks; why plane windows are round + the Comet crashes + the tiny hole.
 - Use WebSearch to check what is currently interesting, then research the mechanism. **Every factual claim must be checked against at least one solid source** (manufacturer/engineering/encyclopedic/reputable press). No made-up numbers: if a number can't be sourced, say it qualitatively. Put the sources in `meta.json`.
