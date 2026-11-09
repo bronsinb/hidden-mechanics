@@ -65,5 +65,21 @@
   "youtube_id": "FnvGn3EtZb0",
   "video_url": "https://youtube.com/shorts/FnvGn3EtZb0",
   "uploaded_at": "2026-11-08T03:52:52Z"
+ },
+ {
+  "n": 5,
+  "slug": "traffic_light_knows",
+  "title": "How a Red Light Knows You're Waiting 🚦 #shorts",
+  "topic": "Inductive loop vehicle detectors at traffic signals: saw-cut wire loop, AC field, eddy currents lower inductance, detector tells controller; bikes and where to stop",
+  "category": "roads & cities",
+  "date": "2026-11-08",
+  "video": "videos/hidden_mechanics_05_traffic_light_knows.mp4",
+  "publish_at": "2026-11-10T10:00:00-08:00",
+  "sources": [
+   "https://www.trafficcontrolcorp.com/feeds/blog/inductive-loop-sensor",
+   "https://www.bikewalknc.org/bicycle-detection-at-traffic-signals/",
+   "https://en.wikipedia.org/wiki/Induction_loop"
+  ],
+  "status": "ready"
  }
 ]

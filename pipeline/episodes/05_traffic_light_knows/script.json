@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "You pull up to a red light, and somehow it knows you're waiting. Look down. The answer is cut into the road."},
+    {"id": "loop",   "text": "Those thin lines in the pavement hide a loop of wire, right under your car."},
+    {"id": "field",  "text": "A box by the road sends alternating current through it, making an invisible magnetic field."},
+    {"id": "car",    "text": "When your car's metal rolls over the loop, tiny currents swirl in the metal and weaken that field."},
+    {"id": "detect", "text": "The box senses the change and tells the signal controller a car is waiting. Your green is on its way."},
+    {"id": "bike",   "text": "But a bike has far less metal, so the loop can miss it."},
+    {"id": "tip",    "text": "On a bike? Stop with your wheels right over the cut lines, where the loop is most sensitive."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
