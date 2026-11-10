@@ -1,0 +1,15 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "Noise-cancelling headphones make a jet engine fade away. The trick? They add more sound, not less."},
+    {"id": "mic",     "text": "A tiny microphone on the outside of each ear cup listens to the noise around you."},
+    {"id": "flip",    "text": "A chip makes a copy of that sound wave, flipped upside down, and plays it through the speaker."},
+    {"id": "cancel",  "text": "Where a peak meets a valley, they cancel. Two sounds add up to almost nothing."},
+    {"id": "inside",  "text": "A second mic inside the cup hears what still leaks through, and keeps correcting."},
+    {"id": "lows",    "text": "It works best on low, steady sounds like engine hum, because they repeat and are easy to predict."},
+    {"id": "voices",  "text": "Voices and sudden sounds change too fast, so the soft cushions have to block those instead."},
+    {"id": "history", "text": "The idea goes back to the 1950s, to quiet helicopter and airplane cockpits."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}

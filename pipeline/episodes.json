@@ -84,5 +84,20 @@
   "youtube_id": "855qAGub-cU",
   "video_url": "https://youtube.com/shorts/855qAGub-cU",
   "uploaded_at": "2026-11-09T03:57:05Z"
+ },
+ {
+  "n": 6,
+  "slug": "noise_cancelling",
+  "title": "How Noise-Cancelling Headphones Erase Sound 🎧 #shorts",
+  "topic": "Active noise cancelling headphones: outside mic, inverted anti-noise, destructive interference, inside feedback mic, best on low steady sounds, voices/sudden sounds blocked passively, 1950s cockpit origins",
+  "category": "personal tech",
+  "date": "2026-11-09",
+  "video": "videos/hidden_mechanics_06_noise_cancelling.mp4",
+  "publish_at": "2026-11-11T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Active_noise_control",
+   "https://www.headphonesty.com/2020/10/how-noise-cancelling-headphone-work"
+  ],
+  "status": "ready"
  }
 ]
