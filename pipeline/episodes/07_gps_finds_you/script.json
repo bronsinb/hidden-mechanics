@@ -1,0 +1,15 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "Your phone can find you anywhere on Earth without sending anything to space. It just listens to clocks."},
+    {"id": "sats",   "text": "Around thirty GPS satellites circle twenty thousand kilometers up, each carrying atomic clocks."},
+    {"id": "time",   "text": "Each one keeps broadcasting the exact time, and where it is."},
+    {"id": "delay",  "text": "Your phone measures how late each signal arrives. Times the speed of light, that's your distance to the satellite."},
+    {"id": "meet",   "text": "One distance leaves you anywhere on a huge circle. Add more satellites, and the circles meet at one spot."},
+    {"id": "four",   "text": "It needs at least four, because the fourth fixes the error in your phone's own cheap clock."},
+    {"id": "twist",  "text": "Here's the twist. Up there, time runs faster, about thirty eight millionths of a second a day."},
+    {"id": "fix",    "text": "Ignore Einstein, and GPS would drift about eleven kilometers a day. So the clocks are tuned slow before launch."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}

@@ -102,5 +102,21 @@
   "youtube_id": "rpLl1QLuHr0",
   "video_url": "https://youtube.com/shorts/rpLl1QLuHr0",
   "uploaded_at": "2026-11-10T03:52:11Z"
+ },
+ {
+  "n": 7,
+  "slug": "gps_finds_you",
+  "title": "How GPS Finds You (and Why It Needs Einstein) 🛰️ #shorts",
+  "topic": "GPS: ~31 satellites at 20,200 km with atomic clocks broadcast time + position, receiver measures travel time x speed of light, intersecting ranges, 4th satellite solves receiver clock error, relativity +38.6 us/day (11.4 km/day) corrected by tuning clocks to 10.22999999543 MHz",
+  "category": "navigation & space",
+  "date": "2026-11-10",
+  "video": "videos/hidden_mechanics_07_gps_finds_you.mp4",
+  "publish_at": "2026-11-12T10:00:00-08:00",
+  "sources": [
+   "https://www.gps.gov/systems/gps/space/",
+   "https://en.wikipedia.org/wiki/Global_Positioning_System",
+   "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+  ],
+  "status": "ready"
  }
 ]

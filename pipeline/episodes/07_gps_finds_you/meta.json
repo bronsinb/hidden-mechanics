@@ -1,0 +1,6 @@
+{
+  "title": "How GPS Finds You (and Why It Needs Einstein) 🛰️ #shorts",
+  "description": "Your phone never sends anything to the GPS satellites. It listens to their atomic clocks, measures how late each signal arrives, and turns that into distance with the speed of light. Four satellites pin you down, and relativity makes their clocks run 38 microseconds a day fast, which would drift your position about 11 km a day if engineers didn't correct it.\n\nFollow Hidden Mechanics for more everyday engineering, explained in under a minute.\n\n#gps #relativity #howitworks #space #shorts",
+  "tags": ["how does gps work", "gps", "trilateration", "atomic clock", "relativity gps", "einstein", "satellites", "how it works"],
+  "sources": ["https://www.gps.gov/systems/gps/space/", "https://en.wikipedia.org/wiki/Global_Positioning_System", "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"]
+}
