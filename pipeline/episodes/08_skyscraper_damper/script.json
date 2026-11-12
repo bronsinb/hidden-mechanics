@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "Near the top of Taipei 101 hangs a giant golden ball. Its only job is to fight the wind."},
+    {"id": "sway",   "text": "Tall towers bend in strong wind, and rock back and forth at their own natural rhythm."},
+    {"id": "ball",   "text": "This ball weighs six hundred sixty tonnes, is welded from forty one steel plates, and hangs like a pendulum."},
+    {"id": "tune",   "text": "It's tuned to swing at the same rhythm as the building."},
+    {"id": "lag",    "text": "So when the tower leans one way, the heavy ball lags behind and pulls it back."},
+    {"id": "soak",   "text": "Dampers around the ball soak up the motion as heat, cutting the sway by up to forty percent."},
+    {"id": "record", "text": "In 2015, Typhoon Soudelor pushed it a full meter, its biggest swing ever recorded."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}

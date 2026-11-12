@@ -121,5 +121,20 @@
   "youtube_id": "756cxUSwj7o",
   "video_url": "https://youtube.com/shorts/756cxUSwj7o",
   "uploaded_at": "2026-11-11T03:52:59Z"
+ },
+ {
+  "n": 8,
+  "slug": "skyscraper_damper",
+  "title": "The 660-Tonne Ball That Keeps a Skyscraper Steady 🏙️ #shorts",
+  "topic": "Tuned mass damper in Taipei 101: 660 t ball of 41 steel plates hung as a pendulum, tuned to the tower's sway, moves against it, dampers turn motion to heat, up to 40% less sway, 1 m swing in Typhoon Soudelor 2015",
+  "category": "buildings",
+  "date": "2026-11-11",
+  "video": "videos/hidden_mechanics_08_skyscraper_damper.mp4",
+  "publish_at": "2026-11-13T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Taipei_101",
+   "https://en.wikipedia.org/wiki/Tuned_mass_damper"
+  ],
+  "status": "ready"
  }
 ]
