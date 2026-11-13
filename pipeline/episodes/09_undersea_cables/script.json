@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "When you stream a video from across the world, it almost never comes from space. It comes along the ocean floor."},
+    {"id": "share",  "text": "Undersea cables carry about ninety nine percent of the data that crosses the oceans."},
+    {"id": "size",   "text": "In deep water, many of these cables are only about an inch thick, lying right on the seabed."},
+    {"id": "light",  "text": "Inside are glass fibers as thin as a hair. Your data rides through them as flashes of laser light."},
+    {"id": "boost",  "text": "Light fades over distance, so repeaters along the cable boost it again, often around every hundred kilometers."},
+    {"id": "power",  "text": "They get their power through the cable itself, at up to fifteen thousand volts."},
+    {"id": "threat", "text": "And the biggest danger isn't sharks, even though they've bitten cables. It's fishing boats and ship anchors."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
