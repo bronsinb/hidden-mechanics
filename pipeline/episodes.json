@@ -1,157 +1,160 @@
 [
-  {
-    "n": 1,
-    "slug": "keyless_entry",
-    "title": "How Your Car Knows Exactly Where Your Key Is 🔑 #shorts",
-    "topic": "Passive keyless entry: LF antennas, signal strength location, relay attacks, UWB time-of-flight",
-    "category": "cars",
-    "date": "2026-11-06",
-    "video_url": "https://youtube.com/shorts/QyrfePYXnV4",
-    "publish_at": "2026-11-06T15:39:00-08:00",
-    "status": "published",
-    "youtube_id": "QyrfePYXnV4",
-    "video": "videos/hidden_mechanics_01_keyless_entry.mp4"
-  },
-  {
-    "n": 2,
-    "slug": "round_plane_windows",
-    "title": "Why Are Airplane Windows Round? ✈️ #shorts",
-    "topic": "Stress concentration at sharp corners, de Havilland Comet 1954 fatigue failures, three-pane windows and the breather hole",
-    "category": "planes",
-    "date": "2026-11-06",
-    "video_url": "https://youtube.com/shorts/Bq2Uje3z8vA",
-    "publish_at": "2026-11-07T10:00:00-08:00",
-    "sources": [
-      "https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/",
-      "https://migflug.com/afterburner/why-aircraft-windows-have-a-tiny-bleed-hole/"
-    ],
-    "status": "scheduled",
-    "youtube_id": "Bq2Uje3z8vA",
-    "video": "videos/hidden_mechanics_02_round_plane_windows.mp4"
-  },
-  {
-    "n": 3,
-    "slug": "phone_knows_up",
-    "title": "How Your Phone Knows Which Way Is Up 📱 #shorts",
-    "topic": "Smartphone MEMS accelerometer: proof mass on springs, capacitive plates, 3 axes, screen rotation, free fall reads 0 g, Apple Sudden Motion Sensor",
-    "category": "phones",
-    "date": "2026-11-06",
-    "video": "videos/hidden_mechanics_03_phone_knows_up.mp4",
-    "publish_at": "2026-11-08T10:00:00-08:00",
-    "sources": [
-      "https://arxiv.org/abs/1507.02224",
-      "https://en.wikipedia.org/wiki/Sudden_Motion_Sensor",
-      "https://maketecheasier.com/how-phone-accelerometers-detect-orientation/"
-    ],
-    "status": "scheduled",
-    "youtube_id": "4v30kml35UE",
-    "video_url": "https://youtube.com/shorts/4v30kml35UE",
-    "uploaded_at": "2026-11-07T04:24:03Z"
-  },
-  {
-    "n": 4,
-    "slug": "microwave_heats",
-    "title": "How Does a Microwave Actually Heat Food? 🔥 #shorts",
-    "topic": "Microwave oven: magnetron, 2.45 GHz / 12 cm waves, polar water molecules twisting (dielectric heating), ~1 cm penetration (not inside-out), hot spots and the turntable, door mesh",
-    "category": "home appliances",
-    "date": "2026-11-07",
-    "video": "videos/hidden_mechanics_04_microwave_heats.mp4",
-    "publish_at": "2026-11-09T10:00:00-08:00",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Microwave_oven",
-      "https://www.scienceabc.com/innovation/how-does-a-microwave-oven-work.html"
-    ],
-    "status": "scheduled",
-    "youtube_id": "FnvGn3EtZb0",
-    "video_url": "https://youtube.com/shorts/FnvGn3EtZb0",
-    "uploaded_at": "2026-11-08T03:52:52Z"
-  },
-  {
-    "n": 5,
-    "slug": "traffic_light_knows",
-    "title": "How a Red Light Knows You're Waiting 🚦 #shorts",
-    "topic": "Inductive loop vehicle detectors at traffic signals: saw-cut wire loop, AC field, eddy currents lower inductance, detector tells controller; bikes and where to stop",
-    "category": "roads & cities",
-    "date": "2026-11-08",
-    "video": "videos/hidden_mechanics_05_traffic_light_knows.mp4",
-    "publish_at": "2026-11-10T10:00:00-08:00",
-    "sources": [
-      "https://www.trafficcontrolcorp.com/feeds/blog/inductive-loop-sensor",
-      "https://www.bikewalknc.org/bicycle-detection-at-traffic-signals/",
-      "https://en.wikipedia.org/wiki/Induction_loop"
-    ],
-    "status": "scheduled",
-    "youtube_id": "855qAGub-cU",
-    "video_url": "https://youtube.com/shorts/855qAGub-cU",
-    "uploaded_at": "2026-11-09T03:57:05Z"
-  },
-  {
-    "n": 6,
-    "slug": "noise_cancelling",
-    "title": "How Noise-Cancelling Headphones Erase Sound 🎧 #shorts",
-    "topic": "Active noise cancelling headphones: outside mic, inverted anti-noise, destructive interference, inside feedback mic, best on low steady sounds, voices/sudden sounds blocked passively, 1950s cockpit origins",
-    "category": "personal tech",
-    "date": "2026-11-09",
-    "video": "videos/hidden_mechanics_06_noise_cancelling.mp4",
-    "publish_at": "2026-11-11T10:00:00-08:00",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Active_noise_control",
-      "https://www.headphonesty.com/2020/10/how-noise-cancelling-headphone-work"
-    ],
-    "status": "scheduled",
-    "youtube_id": "rpLl1QLuHr0",
-    "video_url": "https://youtube.com/shorts/rpLl1QLuHr0",
-    "uploaded_at": "2026-11-10T03:52:11Z"
-  },
-  {
-    "n": 7,
-    "slug": "gps_finds_you",
-    "title": "How GPS Finds You (and Why It Needs Einstein) 🛰️ #shorts",
-    "topic": "GPS: ~31 satellites at 20,200 km with atomic clocks broadcast time + position, receiver measures travel time x speed of light, intersecting ranges, 4th satellite solves receiver clock error, relativity +38.6 us/day (11.4 km/day) corrected by tuning clocks to 10.22999999543 MHz",
-    "category": "navigation & space",
-    "date": "2026-11-10",
-    "video": "videos/hidden_mechanics_07_gps_finds_you.mp4",
-    "publish_at": "2026-11-12T10:00:00-08:00",
-    "sources": [
-      "https://www.gps.gov/systems/gps/space/",
-      "https://en.wikipedia.org/wiki/Global_Positioning_System",
-      "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
-    ],
-    "status": "scheduled",
-    "youtube_id": "756cxUSwj7o",
-    "video_url": "https://youtube.com/shorts/756cxUSwj7o",
-    "uploaded_at": "2026-11-11T03:52:59Z"
-  },
-  {
-    "n": 8,
-    "slug": "skyscraper_damper",
-    "title": "The 660-Tonne Ball That Keeps a Skyscraper Steady 🏙️ #shorts",
-    "topic": "Tuned mass damper in Taipei 101: 660 t ball of 41 steel plates hung as a pendulum, tuned to the tower's sway, moves against it, dampers turn motion to heat, up to 40% less sway, 1 m swing in Typhoon Soudelor 2015",
-    "category": "buildings",
-    "date": "2026-11-11",
-    "video": "videos/hidden_mechanics_08_skyscraper_damper.mp4",
-    "publish_at": "2026-11-13T10:00:00-08:00",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Taipei_101",
-      "https://en.wikipedia.org/wiki/Tuned_mass_damper"
-    ],
-    "status": "scheduled",
-    "youtube_id": "fHSKvITzuCM",
-    "video_url": "https://youtube.com/shorts/fHSKvITzuCM",
-    "uploaded_at": "2026-11-12T03:52:15Z"
-  },
-  {
-    "n": 9,
-    "slug": "undersea_cables",
-    "title": "The Internet Runs Along the Ocean Floor 🌊 #shorts",
-    "topic": "Undersea internet cables",
-    "category": "internet",
-    "date": "2026-11-12",
-    "video": "videos/hidden_mechanics_09_undersea_cables.mp4",
-    "publish_at": "2026-11-14T10:00:00-08:00",
-    "sources": [
-      "https://en.wikipedia.org/wiki/Submarine_communications_cable"
-    ],
-    "status": "ready"
-  }
+ {
+  "n": 1,
+  "slug": "keyless_entry",
+  "title": "How Your Car Knows Exactly Where Your Key Is 🔑 #shorts",
+  "topic": "Passive keyless entry: LF antennas, signal strength location, relay attacks, UWB time-of-flight",
+  "category": "cars",
+  "date": "2026-11-06",
+  "video_url": "https://youtube.com/shorts/QyrfePYXnV4",
+  "publish_at": "2026-11-06T15:39:00-08:00",
+  "status": "published",
+  "youtube_id": "QyrfePYXnV4",
+  "video": "videos/hidden_mechanics_01_keyless_entry.mp4"
+ },
+ {
+  "n": 2,
+  "slug": "round_plane_windows",
+  "title": "Why Are Airplane Windows Round? ✈️ #shorts",
+  "topic": "Stress concentration at sharp corners, de Havilland Comet 1954 fatigue failures, three-pane windows and the breather hole",
+  "category": "planes",
+  "date": "2026-11-06",
+  "video_url": "https://youtube.com/shorts/Bq2Uje3z8vA",
+  "publish_at": "2026-11-07T10:00:00-08:00",
+  "sources": [
+   "https://migflug.com/jetflights/de-havilland-comet-metal-fatigue-square-windows-investigation-1954/",
+   "https://migflug.com/afterburner/why-aircraft-windows-have-a-tiny-bleed-hole/"
+  ],
+  "status": "scheduled",
+  "youtube_id": "Bq2Uje3z8vA",
+  "video": "videos/hidden_mechanics_02_round_plane_windows.mp4"
+ },
+ {
+  "n": 3,
+  "slug": "phone_knows_up",
+  "title": "How Your Phone Knows Which Way Is Up 📱 #shorts",
+  "topic": "Smartphone MEMS accelerometer: proof mass on springs, capacitive plates, 3 axes, screen rotation, free fall reads 0 g, Apple Sudden Motion Sensor",
+  "category": "phones",
+  "date": "2026-11-06",
+  "video": "videos/hidden_mechanics_03_phone_knows_up.mp4",
+  "publish_at": "2026-11-08T10:00:00-08:00",
+  "sources": [
+   "https://arxiv.org/abs/1507.02224",
+   "https://en.wikipedia.org/wiki/Sudden_Motion_Sensor",
+   "https://maketecheasier.com/how-phone-accelerometers-detect-orientation/"
+  ],
+  "status": "scheduled",
+  "youtube_id": "4v30kml35UE",
+  "video_url": "https://youtube.com/shorts/4v30kml35UE",
+  "uploaded_at": "2026-11-07T04:24:03Z"
+ },
+ {
+  "n": 4,
+  "slug": "microwave_heats",
+  "title": "How Does a Microwave Actually Heat Food? 🔥 #shorts",
+  "topic": "Microwave oven: magnetron, 2.45 GHz / 12 cm waves, polar water molecules twisting (dielectric heating), ~1 cm penetration (not inside-out), hot spots and the turntable, door mesh",
+  "category": "home appliances",
+  "date": "2026-11-07",
+  "video": "videos/hidden_mechanics_04_microwave_heats.mp4",
+  "publish_at": "2026-11-09T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Microwave_oven",
+   "https://www.scienceabc.com/innovation/how-does-a-microwave-oven-work.html"
+  ],
+  "status": "scheduled",
+  "youtube_id": "FnvGn3EtZb0",
+  "video_url": "https://youtube.com/shorts/FnvGn3EtZb0",
+  "uploaded_at": "2026-11-08T03:52:52Z"
+ },
+ {
+  "n": 5,
+  "slug": "traffic_light_knows",
+  "title": "How a Red Light Knows You're Waiting 🚦 #shorts",
+  "topic": "Inductive loop vehicle detectors at traffic signals: saw-cut wire loop, AC field, eddy currents lower inductance, detector tells controller; bikes and where to stop",
+  "category": "roads & cities",
+  "date": "2026-11-08",
+  "video": "videos/hidden_mechanics_05_traffic_light_knows.mp4",
+  "publish_at": "2026-11-10T10:00:00-08:00",
+  "sources": [
+   "https://www.trafficcontrolcorp.com/feeds/blog/inductive-loop-sensor",
+   "https://www.bikewalknc.org/bicycle-detection-at-traffic-signals/",
+   "https://en.wikipedia.org/wiki/Induction_loop"
+  ],
+  "status": "scheduled",
+  "youtube_id": "855qAGub-cU",
+  "video_url": "https://youtube.com/shorts/855qAGub-cU",
+  "uploaded_at": "2026-11-09T03:57:05Z"
+ },
+ {
+  "n": 6,
+  "slug": "noise_cancelling",
+  "title": "How Noise-Cancelling Headphones Erase Sound 🎧 #shorts",
+  "topic": "Active noise cancelling headphones: outside mic, inverted anti-noise, destructive interference, inside feedback mic, best on low steady sounds, voices/sudden sounds blocked passively, 1950s cockpit origins",
+  "category": "personal tech",
+  "date": "2026-11-09",
+  "video": "videos/hidden_mechanics_06_noise_cancelling.mp4",
+  "publish_at": "2026-11-11T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Active_noise_control",
+   "https://www.headphonesty.com/2020/10/how-noise-cancelling-headphone-work"
+  ],
+  "status": "scheduled",
+  "youtube_id": "rpLl1QLuHr0",
+  "video_url": "https://youtube.com/shorts/rpLl1QLuHr0",
+  "uploaded_at": "2026-11-10T03:52:11Z"
+ },
+ {
+  "n": 7,
+  "slug": "gps_finds_you",
+  "title": "How GPS Finds You (and Why It Needs Einstein) 🛰️ #shorts",
+  "topic": "GPS: ~31 satellites at 20,200 km with atomic clocks broadcast time + position, receiver measures travel time x speed of light, intersecting ranges, 4th satellite solves receiver clock error, relativity +38.6 us/day (11.4 km/day) corrected by tuning clocks to 10.22999999543 MHz",
+  "category": "navigation & space",
+  "date": "2026-11-10",
+  "video": "videos/hidden_mechanics_07_gps_finds_you.mp4",
+  "publish_at": "2026-11-12T10:00:00-08:00",
+  "sources": [
+   "https://www.gps.gov/systems/gps/space/",
+   "https://en.wikipedia.org/wiki/Global_Positioning_System",
+   "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+  ],
+  "status": "scheduled",
+  "youtube_id": "756cxUSwj7o",
+  "video_url": "https://youtube.com/shorts/756cxUSwj7o",
+  "uploaded_at": "2026-11-11T03:52:59Z"
+ },
+ {
+  "n": 8,
+  "slug": "skyscraper_damper",
+  "title": "The 660-Tonne Ball That Keeps a Skyscraper Steady 🏙️ #shorts",
+  "topic": "Tuned mass damper in Taipei 101: 660 t ball of 41 steel plates hung as a pendulum, tuned to the tower's sway, moves against it, dampers turn motion to heat, up to 40% less sway, 1 m swing in Typhoon Soudelor 2015",
+  "category": "buildings",
+  "date": "2026-11-11",
+  "video": "videos/hidden_mechanics_08_skyscraper_damper.mp4",
+  "publish_at": "2026-11-13T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Taipei_101",
+   "https://en.wikipedia.org/wiki/Tuned_mass_damper"
+  ],
+  "status": "scheduled",
+  "youtube_id": "fHSKvITzuCM",
+  "video_url": "https://youtube.com/shorts/fHSKvITzuCM",
+  "uploaded_at": "2026-11-12T03:52:15Z"
+ },
+ {
+  "n": 9,
+  "slug": "undersea_cables",
+  "title": "The Internet Runs Along the Ocean Floor 🌊 #shorts",
+  "topic": "Undersea internet cables",
+  "category": "internet",
+  "date": "2026-11-12",
+  "video": "videos/hidden_mechanics_09_undersea_cables.mp4",
+  "publish_at": "2026-11-14T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Submarine_communications_cable"
+  ],
+  "status": "scheduled",
+  "youtube_id": "lQrXpiEjpbo",
+  "video_url": "https://youtube.com/shorts/lQrXpiEjpbo",
+  "uploaded_at": "2026-11-13T03:54:12Z"
+ }
 ]
