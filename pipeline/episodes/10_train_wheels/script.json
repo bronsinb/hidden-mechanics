@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",     "text": "Both wheels of a train are locked to one solid axle, so they always spin together. So how does it turn a corner?"},
+    {"id": "problem",  "text": "On a curve, the outer rail is longer. Flat wheels would have to skid to keep up."},
+    {"id": "cone",     "text": "The trick: train wheels aren't flat. They're cones, wider on the inside."},
+    {"id": "shift",    "text": "In a curve, the wheels slide outward, so the outer wheel rolls on its wide part, the inner on its narrow part."},
+    {"id": "distance", "text": "Wider means more distance per turn, so the outer side travels farther, and the train steers itself around the bend."},
+    {"id": "center",   "text": "On straight track, the same cones keep nudging the wheels back to the middle."},
+    {"id": "hunting",  "text": "But at high speed, that nudging can overshoot into a violent side to side wobble, called hunting."},
+    {"id": "cta",      "text": "Follow Hidden Mechanics for more."}
+  ]
+}
