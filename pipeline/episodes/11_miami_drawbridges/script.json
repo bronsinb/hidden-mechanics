@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "GTA 6 heads back to a fake Miami. The real Miami has a party trick: its roads stand up to let boats through."},
+    {"id": "river",   "text": "On the Miami River, a whole row of drawbridges open on signal for passing boats."},
+    {"id": "name",    "text": "Many are bascule bridges. Bascule is French for seesaw, and that's exactly how they work."},
+    {"id": "pivot",   "text": "Each road deck, called a leaf, pivots on a huge axle called a trunnion."},
+    {"id": "counter", "text": "Behind the pivot sits a massive counterweight that balances the heavy leaf, like a perfectly even seesaw."},
+    {"id": "motor",   "text": "Because it's so well balanced, relatively small motors can swing tons of steel up into the air."},
+    {"id": "rule",    "text": "And boats usually win. By federal rule, these bridges open on signal, except during rush hours."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
