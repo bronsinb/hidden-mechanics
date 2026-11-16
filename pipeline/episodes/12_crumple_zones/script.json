@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "In open world games, you can smash into a wall and just keep driving. Real cars are designed to wreck themselves on purpose."},
+    {"id": "stop",    "text": "In a crash, your body must go from full speed to zero. What hurts is how fast it stops."},
+    {"id": "time",    "text": "Stop almost instantly and the force is enormous. Stretch the stop out, even slightly, and the force drops dramatically."},
+    {"id": "crumple", "text": "That's the crumple zone: the front and back of the car are designed to fold and absorb the energy."},
+    {"id": "cage",    "text": "But the cabin is the opposite: a stiff safety cell of high strength steel that's meant to keep its shape."},
+    {"id": "team",    "text": "Seat belts and airbags then stretch your own stop a little longer."},
+    {"id": "history", "text": "A Mercedes engineer patented the idea, and it first reached a production car in 1959."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
