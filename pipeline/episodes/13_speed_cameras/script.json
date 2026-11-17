@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "In open world games, the cops are on you instantly. Real speed cameras are almost that quick, using pure physics."},
+    {"id": "radar",   "text": "Radar cameras fire radio waves at your car. The waves bounce back at a slightly different frequency."},
+    {"id": "doppler", "text": "That's the Doppler effect, why a siren sounds higher coming toward you. Bigger shift, faster car."},
+    {"id": "lidar",   "text": "Laser guns, called lidar, fire short pulses of infrared light instead and time how long each takes to bounce back."},
+    {"id": "samples", "text": "They take hundreds of distance readings in about a third of a second, and the change in distance gives your speed."},
+    {"id": "beam",    "text": "Their beam is so narrow it can pick out one car in traffic."},
+    {"id": "average", "text": "Some systems skip both: cameras read your plate at two points, and distance divided by time gives your average speed."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
