@@ -7,10 +7,10 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "upload = upload ready episodes, check = only test the YouTube login"
+        description: "upload = upload ready episodes, check = only test the YouTube login, stats = snapshot view counts"
         default: upload
         type: choice
-        options: [upload, check]
+        options: [upload, check, stats]
 
 permissions:
   contents: write
@@ -33,16 +33,19 @@ jobs:
         run: |
           if [ "${{ github.event.inputs.mode }}" = "check" ]; then
             python3 pipeline/publish.py check
+          elif [ "${{ github.event.inputs.mode }}" = "stats" ]; then
+            python3 pipeline/publish.py stats
           else
             python3 pipeline/publish.py
           fi
       - name: Save video links back to the episode log
         if: github.event.inputs.mode != 'check'
         run: |
-          if ! git diff --quiet pipeline/episodes.json; then
+          git add -N pipeline/stats.json 2>/dev/null || true
+          if ! git diff --quiet pipeline/episodes.json pipeline/stats.json; then
             git config user.name "hidden-mechanics-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add pipeline/episodes.json
-            git commit -m "Log YouTube upload [skip ci]"
+            git add pipeline/episodes.json pipeline/stats.json 2>/dev/null || git add pipeline/episodes.json
+            git commit -m "Log YouTube upload/stats [skip ci]"
             git push
           fi

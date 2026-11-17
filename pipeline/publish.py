@@ -90,9 +90,37 @@ def upload(tok, ep):
     print(f"#{ep['n']} uploaded: {ep['video_url']} ({ep['status']}, publish_at {status.get('publishAt', 'now')})")
 
 
+def stats(tok):
+    """Snapshot public stats for every uploaded episode into pipeline/stats.json (appends one snapshot per run)."""
+    log = json.load(open(LOG))
+    eps = {e["youtube_id"]: e for e in log if e.get("youtube_id")}
+    rows, ids = [], list(eps)
+    for i in range(0, len(ids), 50):
+        q = urllib.parse.urlencode({"part": "snippet,statistics,status,contentDetails", "id": ",".join(ids[i:i + 50])})
+        st, _, out = http("GET", f"https://www.googleapis.com/youtube/v3/videos?{q}", headers={"Authorization": f"Bearer {tok}"})
+        if st != 200:
+            sys.exit(f"Stats lookup failed ({st}): {out.decode()[:300]}")
+        for it in json.loads(out).get("items", []):
+            s, e = it.get("statistics", {}), eps[it["id"]]
+            rows.append({"n": e["n"], "id": it["id"], "title": it["snippet"]["title"],
+                         "published_at": it["snippet"].get("publishedAt"), "privacy": it["status"].get("privacyStatus"),
+                         "views": int(s.get("viewCount", 0)), "likes": int(s.get("likeCount", 0)),
+                         "comments": int(s.get("commentCount", 0))})
+    path = os.path.join(ROOT, "pipeline", "stats.json")
+    hist = json.load(open(path)) if os.path.exists(path) else []
+    hist.append({"fetched_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                 "videos": sorted(rows, key=lambda r: r["n"])})
+    json.dump(hist, open(path, "w"), indent=1, ensure_ascii=False)
+    for r in sorted(rows, key=lambda r: r["n"]):
+        print(f"#{r['n']:>2} {r['privacy']:<8} {r['published_at']}  views {r['views']:>6}  likes {r['likes']:>4}  {r['title']}")
+
+
 def main():
     if len(sys.argv) > 1 and sys.argv[1] == "check":
         check(token())
+        return
+    if len(sys.argv) > 1 and sys.argv[1] == "stats":
+        stats(token())
         return
     log = json.load(open(LOG))
     ready = [e for e in log if e.get("status") == "ready"]
