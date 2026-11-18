@@ -229,5 +229,21 @@
   "youtube_id": "jpbbPDpNLqQ",
   "video_url": "https://youtube.com/shorts/jpbbPDpNLqQ",
   "uploaded_at": "2026-11-17T03:52:34Z"
+ },
+ {
+  "n": 14,
+  "slug": "open_world_streaming",
+  "title": "How Do Open Worlds Have No Loading Screens? 🎮 #GTA6 #shorts",
+  "topic": "How open-world games load a whole city with no loading screens (GTA 6 week #4, launch day)",
+  "category": "gaming x engineering",
+  "date": "2026-11-17",
+  "video": "videos/hidden_mechanics_14_open_world_streaming.mp4",
+  "publish_at": "2026-11-19T10:00:00-08:00",
+  "sources": [
+   "https://developers.meta.com/horizon/blog/now-available-guide-to-asset-streaming-in-open-world-games-/",
+   "https://at-web1.www.anandtech.com/show/15848/storage-matters-xbox-ps5-new-era-of-gaming/3",
+   "https://www.fox10tv.com/2026/10/16/gta-6-locks-nov-19-release-date-after-delays/?outputType=amp"
+  ],
+  "status": "ready"
  }
 ]

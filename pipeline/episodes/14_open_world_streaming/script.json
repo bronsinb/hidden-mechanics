@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "GTA 6 is out today. So how do open world games show a giant world with no loading screens?"},
+    {"id": "memory",  "text": "The whole world won't fit in your console's memory. So games don't load it all at once."},
+    {"id": "chunks",  "text": "Instead, the map is split into chunks. Only the chunks around you are kept in memory."},
+    {"id": "stream",  "text": "As you move, the game quietly loads chunks ahead of you from storage, and throws away the ones behind."},
+    {"id": "lod",     "text": "Far away things use simpler versions of models, with fewer details. You'd never notice from a distance."},
+    {"id": "predict", "text": "On fast SSDs, games can fetch what they need just a second or so before you need it."},
+    {"id": "speed",   "text": "That's why speed is the real stress test: move fast enough, and the world must load faster than you arrive."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
