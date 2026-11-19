@@ -248,5 +248,20 @@
   "youtube_id": "cYt9Xe0MI84",
   "video_url": "https://youtube.com/shorts/cYt9Xe0MI84",
   "uploaded_at": "2026-11-18T03:52:50Z"
+ },
+ {
+  "n": 15,
+  "slug": "game_crowd_ai",
+  "title": "How Do Game Characters Know Where to Go? 🎮 #GTA6 #shorts",
+  "topic": "How game traffic and pedestrians decide where to go: road graphs, navmesh, A*, flocking (GTA 6 week #5)",
+  "category": "gaming x engineering",
+  "date": "2026-11-18",
+  "video": "videos/hidden_mechanics_15_game_crowd_ai.mp4",
+  "publish_at": "2026-11-20T10:00:00-08:00",
+  "sources": [
+   "https://kindatechnical.com/game-development/pathfinding-a-star-dijkstra-and-navigation-meshes.html",
+   "https://research.ncl.ac.uk/game/mastersdegree/gametechnologies/previousinformation/artificialintelligence2path-findingandcrowds/2017 Tutorial 13 - Path-Finding and Crowd Management.pdf"
+  ],
+  "status": "ready"
  }
 ]

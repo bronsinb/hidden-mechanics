@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",  "text": "Open world games like GTA fill their streets with cars and people. So how does each one know where to go?"},
+    {"id": "map",   "text": "First, the game gives them a hidden map. Roads become a network of points and lines. Walkable areas become a mesh of shapes, called a navmesh."},
+    {"id": "astar", "text": "Then a pathfinding algorithm, often A star, searches for the best route."},
+    {"id": "score", "text": "It scores each step by distance travelled so far plus a guess of what's left, so it explores the most promising paths first."},
+    {"id": "cheap", "text": "Games don't need to rerun that every frame, so they spread the work across many frames."},
+    {"id": "flock", "text": "For crowds, simple rules do the rest: keep your distance, match your neighbours' direction, stay with the group."},
+    {"id": "alive", "text": "Combine them, and a crowd suddenly looks alive."},
+    {"id": "cta",   "text": "Follow Hidden Mechanics for more."}
+  ]
+}
