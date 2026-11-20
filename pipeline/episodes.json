@@ -266,5 +266,20 @@
   "youtube_id": "l52kAbYKEU4",
   "video_url": "https://youtube.com/shorts/l52kAbYKEU4",
   "uploaded_at": "2026-11-19T03:53:03Z"
+ },
+ {
+  "n": 16,
+  "slug": "pulse_oximeter",
+  "title": "How a Finger Clip Reads Your Blood Oxygen ❤️ #shorts",
+  "topic": "How a pulse oximeter reads blood oxygen with red and infrared light",
+  "category": "medical tech",
+  "date": "2026-11-19",
+  "video": "videos/hidden_mechanics_16_pulse_oximeter.mp4",
+  "publish_at": "2026-11-21T10:00:00-08:00",
+  "sources": [
+   "https://opencriticalcare.org/faq-category/how-pulse-oximeters-work/",
+   "https://howequipmentworks.com/pulse_oximeter"
+  ],
+  "status": "ready"
  }
 ]

@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "Clip this on your finger, and in seconds it knows how much oxygen is in your blood, without a single needle. How?"},
+    {"id": "light",  "text": "One side shines two colors through your finger: red light and invisible infrared. A sensor on the other side measures what gets through."},
+    {"id": "blood",  "text": "Blood rich in oxygen soaks up more infrared. Blood low in oxygen soaks up more red."},
+    {"id": "ratio",  "text": "So the ratio of red to infrared tells the device how saturated your blood is."},
+    {"id": "tissue", "text": "But your finger is also skin, bone and veins. The trick is your heartbeat."},
+    {"id": "pulse",  "text": "Each beat pushes a little extra arterial blood in, so the device only looks at the part of the signal that pulses."},
+    {"id": "limits", "text": "That's also why movement, cold fingers, or poor circulation can make readings less reliable."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
