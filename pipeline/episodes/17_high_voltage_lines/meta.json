@@ -1,0 +1,6 @@
+{
+  "title": "Why Power Lines Run at 100,000+ Volts ⚡ #shorts",
+  "description": "Your outlet gives you about 120 volts, but long-distance transmission lines run above 100,000 volts. Why so extreme? Wires waste energy as heat, and that loss grows with the square of the current: double the current and the loss quadruples. Since power is voltage times current, cranking the voltage up lets you send the same power with a tiny current. Transformers boost the voltage at the power plant and step it back down near your home. The lines are bare metal, insulated mostly by air, which is why towers are tall and wires are spaced far apart. Even so, the EIA estimates about 5% of US electricity is lost in transmission and distribution.\n\nFollow Hidden Mechanics for more everyday engineering, explained in under a minute.\n\n#electricity #powerlines #engineering #physics #howitworks #shorts",
+  "tags": ["power lines", "high voltage", "transmission lines", "why high voltage", "transformers", "electrical engineering", "power grid", "physics", "how it works", "engineering"],
+  "sources": ["https://www.practical.engineering/blog/2019/9/24/how-do-electric-transmission-lines-work", "https://www.eia.gov/tools/faqs/faq.php?id=105&t=3"]
+}

@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "Your outlet gives you about 120 volts. The long distance lines behind it run above a hundred thousand. Why so extreme?"},
+    {"id": "loss",   "text": "Wires waste energy as heat, and the waste depends on the current flowing through them."},
+    {"id": "square", "text": "Double the current, and the heat loss doesn't double. It quadruples."},
+    {"id": "trade",  "text": "Power is voltage times current. So if you crank the voltage way up, you can send the same power with a tiny current."},
+    {"id": "xfmr",   "text": "Transformers at the power plant boost the voltage, and transformers near your home step it back down."},
+    {"id": "air",    "text": "Those lines are bare metal. The insulation is mostly air, which is why towers are tall and wires are spaced so far apart."},
+    {"id": "result", "text": "Even so, about five percent of America's electricity is lost along the way."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
