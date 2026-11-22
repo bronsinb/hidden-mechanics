@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "A dimpled golf ball can fly nearly twice as far as a smooth one. How can little dents do that?"},
+    {"id": "drag",    "text": "As a ball flies, air flows around it, then peels off the back, leaving a swirling, low pressure wake. That wake pulls the ball backward."},
+    {"id": "smooth",  "text": "On a smooth ball, the air peels off early, so the wake is huge."},
+    {"id": "dimples", "text": "Dimples stir up a thin layer of turbulent air right at the surface. That turbulent layer clings to the ball longer."},
+    {"id": "wake",    "text": "So the air leaves later, the wake shrinks, and drag drops."},
+    {"id": "spin",    "text": "Add backspin, and the dimples help create lift, keeping the ball in the air longer."},
+    {"id": "history", "text": "Golfers discovered this by accident: old scuffed balls flew farther than new smooth ones."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}

@@ -302,5 +302,20 @@
   "youtube_id": "Jall8NuROVA",
   "video_url": "https://youtube.com/shorts/Jall8NuROVA",
   "uploaded_at": "2026-11-21T03:51:52Z"
+ },
+ {
+  "n": 18,
+  "slug": "golf_ball_dimples",
+  "title": "Why Golf Balls Have Dimples ⛳ #shorts",
+  "topic": "Why golf balls have dimples: turbulent boundary layer, smaller wake, less drag",
+  "category": "sports",
+  "date": "2026-11-21",
+  "video": "videos/hidden_mechanics_18_golf_ball_dimples.mp4",
+  "publish_at": "2026-11-23T10:00:00-08:00",
+  "sources": [
+   "https://www.psu.edu/news/research/story/probing-question-how-do-dimples-make-golf-balls-travel-farther",
+   "https://van.physics.illinois.edu/qa/listing.php?id=945"
+  ],
+  "status": "ready"
  }
 ]
