@@ -320,5 +320,20 @@
   "youtube_id": "QRT2QhFKyGk",
   "video_url": "https://youtube.com/shorts/QRT2QhFKyGk",
   "uploaded_at": "2026-11-22T03:51:58Z"
+ },
+ {
+  "n": 19,
+  "slug": "turkey_popup_timer",
+  "title": "How Does a Turkey Pop-Up Timer Know? 🦃 #shorts",
+  "topic": "How a turkey pop-up timer works (fusible alloy + spring), Thanksgiving week",
+  "category": "kitchen",
+  "date": "2026-11-22",
+  "video": "videos/hidden_mechanics_19_turkey_popup_timer.mp4",
+  "publish_at": "2026-11-24T10:00:00-08:00",
+  "sources": [
+   "https://www.aip.org/inside-science/brief-how-pop-up-turkey-timers-work",
+   "https://home.howstuffworks.com/pop-up-timer.htm"
+  ],
+  "status": "ready"
  }
 ]

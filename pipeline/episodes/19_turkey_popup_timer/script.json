@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "That little plastic button in a Thanksgiving turkey has no battery and no electronics. So how does it know the bird is done?"},
+    {"id": "parts",  "text": "Inside is a spring loaded red stick, held down by a tiny blob of metal, similar to solder."},
+    {"id": "melt",   "text": "That alloy is designed to melt right around turkey done temperature."},
+    {"id": "pop",    "text": "When the meat around it gets hot enough, the metal turns to liquid, lets go of the stick, and the spring shoots it up. Pop."},
+    {"id": "idea",   "text": "The idea came from a turkey farmer who borrowed it from fire sprinklers, which use a melting metal plug to release water."},
+    {"id": "patent", "text": "It was patented in 1961."},
+    {"id": "warn",   "text": "But they can pop early. So double check with a thermometer: 165 degrees Fahrenheit in the thickest parts."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
