@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",     "text": "A steel bar sinks instantly. So how does a ship made of thousands of tons of that steel float?"},
+    {"id": "push",     "text": "Anything in water gets pushed up by a force equal to the weight of the water it pushes aside."},
+    {"id": "block",    "text": "A solid block of steel pushes aside only a little water, much less than its own weight, so it sinks."},
+    {"id": "shape",    "text": "Shape that same steel into a hollow hull, and it pushes aside far more water."},
+    {"id": "air",      "text": "Most of a ship's inside is air, so its average density ends up lower than water's."},
+    {"id": "settle",   "text": "It settles until the water it displaces weighs exactly as much as the ship."},
+    {"id": "plimsoll", "text": "That's why ships carry load lines, called Plimsoll marks, showing how deep they can safely sit. In fresh water, they ride lower."},
+    {"id": "cta",      "text": "Follow Hidden Mechanics for more."}
+  ]
+}

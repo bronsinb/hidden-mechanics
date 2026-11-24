@@ -338,5 +338,20 @@
   "youtube_id": "wV9690C4Hjc",
   "video_url": "https://youtube.com/shorts/wV9690C4Hjc",
   "uploaded_at": "2026-11-23T03:52:04Z"
+ },
+ {
+  "n": 20,
+  "slug": "steel_ships_float",
+  "title": "How Do Steel Ships Float? 🚢 #shorts",
+  "topic": "How steel ships float: Archimedes, hollow hulls, average density, load lines",
+  "category": "ships",
+  "date": "2026-11-23",
+  "video": "videos/hidden_mechanics_20_steel_ships_float.mp4",
+  "publish_at": "2026-11-25T10:00:00-08:00",
+  "sources": [
+   "https://gard.no/en/insights/why-do-ships-float",
+   "https://manoa.hawaii.edu/exploringourfluidearth/physical/navigation-and-transportation/transportation-and-ship-design"
+  ],
+  "status": "ready"
  }
 ]
