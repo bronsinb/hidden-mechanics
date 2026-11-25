@@ -356,5 +356,20 @@
   "youtube_id": "cFl6d7QcRfQ",
   "video_url": "https://youtube.com/shorts/cFl6d7QcRfQ",
   "uploaded_at": "2026-11-24T03:52:08Z"
+ },
+ {
+  "n": 21,
+  "slug": "first_down_line",
+  "title": "How the Yellow First-Down Line Works 🏈 #shorts",
+  "topic": "How the TV yellow first-down line works (camera sensors, field model, color keying), Thanksgiving Day",
+  "category": "broadcast tech",
+  "date": "2026-11-24",
+  "video": "videos/hidden_mechanics_21_first_down_line.mp4",
+  "publish_at": "2026-11-26T10:00:00-08:00",
+  "sources": [
+   "https://entertainment.howstuffworks.com/first-down-line.htm",
+   "https://ethw.org/The_Making_of_Football%27s_Yellow_First-and-Ten_Line"
+  ],
+  "status": "ready"
  }
 ]

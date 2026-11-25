@@ -1,0 +1,6 @@
+{
+  "title": "How the Yellow First-Down Line Works 🏈 #shorts",
+  "description": "Watching football this Thanksgiving? That yellow first-down line isn't painted on the field. Each broadcast camera is fitted with sensors that track every pan, tilt, zoom and focus change, and engineers map the field into a 3D model, including its slight curve. Combining the two, a computer knows exactly where the yard line should appear in the shot, recalculating 30 times a second. The trick: the line is only drawn over grass-colored pixels, so players seem to walk right over it. The video is delayed a few frames so the line and picture stay in sync. Sportvision's system debuted on ESPN in the late 1990s.\n\nFollow Hidden Mechanics for more everyday engineering, explained in under a minute.\n\n#football #NFL #Thanksgiving #broadcasttech #engineering #shorts",
+  "tags": ["yellow first down line", "first and ten line", "how the first down line works", "football broadcast", "Thanksgiving football", "augmented reality", "sports tech", "Sportvision", "how it works", "engineering"],
+  "sources": ["https://entertainment.howstuffworks.com/first-down-line.htm", "https://ethw.org/The_Making_of_Football%27s_Yellow_First-and-Ten_Line"]
+}

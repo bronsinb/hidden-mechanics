@@ -1,0 +1,14 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "Watching football this Thanksgiving? That yellow first down line isn't painted on the field. So how does it stay glued to the grass?"},
+    {"id": "sensors", "text": "Each camera is fitted with sensors that track every pan, tilt, zoom and focus change."},
+    {"id": "model",   "text": "Engineers also map the field into a 3D model, even its slight curve."},
+    {"id": "draw",    "text": "Combine the two, and a computer knows exactly where that yard line should appear in the shot, recalculating thirty times a second."},
+    {"id": "key",     "text": "Then the trick: the line is only drawn over grass colored pixels, so players seem to walk right over it."},
+    {"id": "delay",   "text": "The video is delayed by a few frames so the line and picture stay perfectly in sync."},
+    {"id": "history", "text": "It debuted on ESPN in the late nineteen nineties, and now it's hard to imagine football without it."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
