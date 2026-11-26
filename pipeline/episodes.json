@@ -374,5 +374,20 @@
   "youtube_id": "V7OvFaCH4DA",
   "video_url": "https://youtube.com/shorts/V7OvFaCH4DA",
   "uploaded_at": "2026-11-25T03:52:30Z"
+ },
+ {
+  "n": 22,
+  "slug": "store_security_tags",
+  "title": "How Store Security Gates Catch You 🛍️ #shorts",
+  "topic": "How store anti-theft tags and gates work (acousto-magnetic 58 kHz, RF 8.2 MHz), Black Friday",
+  "category": "retail tech",
+  "date": "2026-11-25",
+  "video": "videos/hidden_mechanics_22_store_security_tags.mp4",
+  "publish_at": "2026-11-27T10:00:00-08:00",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Electronic_article_surveillance",
+   "https://www.vice.com/en/article/the-hidden-acoustics-and-physics-behind-anti-shoplifting-tags"
+  ],
+  "status": "ready"
  }
 ]

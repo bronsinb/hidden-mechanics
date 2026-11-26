@@ -1,0 +1,6 @@
+{
+  "title": "How Store Security Gates Catch You 🛍️ #shorts",
+  "description": "It's Black Friday. How do those store gates know you didn't pay? Many acousto-magnetic security labels hide two thin metal strips: a magnetostrictive alloy that vibrates in a magnetic field, and a magnet that biases (tunes) it. The gates send short bursts at about 58 kHz, the strip vibrates like a tiny tuning fork, and when each burst stops it keeps ringing, which the gate detects. At checkout the label is demagnetized, so the tag goes quiet. Other tags (RF) use a tiny coil and capacitor tuned to 8.2 MHz, and a deactivator shorts them out at checkout.\n\nFollow Hidden Mechanics for more everyday engineering, explained in under a minute.\n\n#BlackFriday #shopping #engineering #physics #howitworks #shorts",
+  "tags": ["Black Friday", "store security tags", "anti theft tags", "security gates", "acousto-magnetic", "EAS", "how it works", "magnetostriction", "engineering", "retail tech"],
+  "sources": ["https://en.wikipedia.org/wiki/Electronic_article_surveillance", "https://www.vice.com/en/article/the-hidden-acoustics-and-physics-behind-anti-shoplifting-tags"]
+}

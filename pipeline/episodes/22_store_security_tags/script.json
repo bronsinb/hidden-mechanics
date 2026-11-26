@@ -1,0 +1,13 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",   "text": "It's Black Friday. Ever wonder how those store gates know you didn't pay?"},
+    {"id": "strip",  "text": "Many security stickers hide two thin metal strips. One is a special alloy that vibrates in a magnetic field. The other is a magnet that tunes it."},
+    {"id": "ring",   "text": "The gates send out short bursts at fifty eight kilohertz, and the strip starts vibrating, like a tiny tuning fork."},
+    {"id": "listen", "text": "When each burst stops, the strip keeps ringing, and the gate hears it. Beep."},
+    {"id": "deact",  "text": "At checkout, the cashier swipes it over a pad that demagnetizes the magnet strip, so the tag goes quiet."},
+    {"id": "rf",     "text": "Other tags use a tiny coil and capacitor tuned to eight point two megahertz, and get fried at checkout instead."},
+    {"id": "cta",    "text": "Follow Hidden Mechanics for more."}
+  ]
+}
