@@ -1,0 +1,13 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",    "text": "The Space Station flies only about 250 miles up, where gravity is still about 90 percent as strong as down here. So why doesn't it fall?"},
+    {"id": "falling", "text": "It does. It's falling all the time."},
+    {"id": "throw",   "text": "Throw a ball sideways and it curves to the ground. Throw it faster, and it lands farther away."},
+    {"id": "orbit",   "text": "At about 17,500 miles per hour, the ground curves away as fast as the station falls, so it keeps missing Earth."},
+    {"id": "float",   "text": "That's why astronauts float. They're not beyond gravity. They're falling right along with the station."},
+    {"id": "drag",    "text": "But a whisper of air up there slowly drags it down, so about once a month it fires thrusters to climb back up."},
+    {"id": "cta",     "text": "Follow Hidden Mechanics for more."}
+  ]
+}
