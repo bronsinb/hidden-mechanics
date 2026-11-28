@@ -1,0 +1,13 @@
+{
+  "voice": "am_michael",
+  "speed": 1.08,
+  "lines": [
+    {"id": "hook",     "text": "Ski season is here, but the snow on many slopes didn't fall from the sky. It came out of a cannon."},
+    {"id": "mist",     "text": "Snow guns spray a fine mist of water into cold air, with a big fan or compressed air flinging it high over the trail."},
+    {"id": "cool",     "text": "As some droplets evaporate, they pull heat out of the air, cooling it enough to freeze the droplets around them."},
+    {"id": "seed",     "text": "Some machines also add nucleating agents, which help the droplets freeze faster."},
+    {"id": "humidity", "text": "Humidity matters as much as temperature. Crews watch the wet bulb temperature, and in very dry air they can even make snow a bit above freezing."},
+    {"id": "dense",    "text": "Machine snow is denser and rounder, because each droplet gets only a short drop to freeze, not a long fall from a cloud."},
+    {"id": "cta",      "text": "Follow Hidden Mechanics for more."}
+  ]
+}

@@ -410,5 +410,20 @@
   "youtube_id": "uP0bR4_Gxw8",
   "video_url": "https://youtube.com/shorts/uP0bR4_Gxw8",
   "uploaded_at": "2026-11-27T03:51:53Z"
+ },
+ {
+  "n": 24,
+  "slug": "snowmaking",
+  "title": "How Ski Resorts Make Snow ❄️ #shorts",
+  "topic": "How ski resorts make snow: snow guns, evaporative cooling, nucleating agents, wet-bulb temperature",
+  "category": "outdoors",
+  "date": "2026-11-27",
+  "video": "videos/hidden_mechanics_24_snowmaking.mp4",
+  "publish_at": "2026-11-29T10:00:00-08:00",
+  "sources": [
+   "https://www.foxweather.com/learn/fake-snow-make-your-own-snow-when-mother-nature-wont-cooperate",
+   "https://www.gearpatrol.com/tech/a202055/how-snow-making-works/"
+  ],
+  "status": "ready"
  }
 ]
